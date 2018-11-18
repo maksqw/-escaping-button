@@ -2,7 +2,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 function newPosition (oldTop, oldLeft, width, height) {
-    var range = 20; // Тут выставьте свой минимальный диапазон дальности
+    var range = 20; // max range diapason
     var newTop = getRandomInt(0, height);
     var newLeft = getRandomInt(0, width);
     if ( ((oldTop-range)<newTop && (oldTop+range)>newTop) ||
